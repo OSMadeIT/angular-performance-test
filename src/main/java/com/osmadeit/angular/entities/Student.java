@@ -5,6 +5,7 @@
  */
 package com.osmadeit.angular.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.List;
 import javax.persistence.Basic;
@@ -59,6 +60,7 @@ public class Student implements Serializable {
     @Size(min = 1, max = 199)
     @Column(name = "last_name", nullable = false, length = 199)
     private String lastName;
+    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "studentId")
     private List<Result> resultList;
 
@@ -141,5 +143,5 @@ public class Student implements Serializable {
     public String toString() {
         return "com.osmadeit.angular.entities.Student[ id=" + id + " ]";
     }
-    
+
 }

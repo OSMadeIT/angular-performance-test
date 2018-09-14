@@ -28,6 +28,7 @@ public class ExamRest {
     ExamBean examService; 
  
     @GET
+    
     @Path("/list")
     public List<Exam> findExam(){
        List<Exam> exams = examService.getExam();

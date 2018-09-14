@@ -52,51 +52,51 @@ public class Result implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "math", nullable = false)
-    private float math;
+    private Integer math;
     @Basic(optional = false)
     @NotNull
     @Column(name = "english", nullable = false)
-    private float english;
+    private Integer english;
     @Basic(optional = false)
     @NotNull
     @Column(name = "kiswahili", nullable = false)
-    private float kiswahili;
+    private Integer kiswahili;
     @Basic(optional = false)
     @NotNull
     @Column(name = "biology", nullable = false)
-    private float biology;
+    private Integer biology;
     @Basic(optional = false)
     @NotNull
     @Column(name = "chemistry", nullable = false)
-    private float chemistry;
+    private Integer chemistry;
     @Basic(optional = false)
     @NotNull
     @Column(name = "physics", nullable = false)
-    private float physics;
+    private Integer physics;
     @Basic(optional = false)
     @NotNull
     @Column(name = "agriculture", nullable = false)
-    private float agriculture;
+    private Integer agriculture;
     @Basic(optional = false)
     @NotNull
     @Column(name = "geography", nullable = false)
-    private float geography;
+    private Integer geography;
     @Basic(optional = false)
     @NotNull
     @Column(name = "computer_studies", nullable = false)
-    private float computerStudies;
+    private Integer computerStudies;
     @Basic(optional = false)
     @NotNull
     @Column(name = "total_mark", nullable = false)
-    private float totalMark;
+    private Integer totalMark;
     @Basic(optional = false)
     @NotNull
     @Column(name = "mean_mark", nullable = false)
-    private float meanMark;
+    private Integer meanMark;
     @Basic(optional = false)
     @NotNull
     @Column(name = "mean_grade", nullable = false)
-    private float meanGrade;
+    private Integer meanGrade;
     @JoinColumn(name = "exam_id", referencedColumnName = "id", nullable = false)
     @JsonIgnore
     @ManyToOne(optional = false)
@@ -113,7 +113,7 @@ public class Result implements Serializable {
         this.id = id;
     }
 
-    public Result(Integer id, float math, float english, float kiswahili, float biology, float chemistry, float physics, float agriculture, float geography, float computerStudies, float totalMark, float meanMark, float meanGrade) {
+    public Result(Integer id, Integer math, Integer english, Integer kiswahili, Integer biology, Integer chemistry, Integer physics, Integer agriculture, Integer geography, Integer computerStudies, Integer totalMark, Integer meanMark, Integer meanGrade) {
         this.id = id;
         this.math = math;
         this.english = english;
@@ -137,99 +137,99 @@ public class Result implements Serializable {
         this.id = id;
     }
 
-    public float getMath() {
+    public Integer getMath() {
         return math;
     }
 
-    public void setMath(float math) {
+    public void setMath(Integer math) {
         this.math = math;
     }
 
-    public float getEnglish() {
+    public Integer getEnglish() {
         return english;
     }
 
-    public void setEnglish(float english) {
+    public void setEnglish(Integer english) {
         this.english = english;
     }
 
-    public float getKiswahili() {
+    public Integer getKiswahili() {
         return kiswahili;
     }
 
-    public void setKiswahili(float kiswahili) {
+    public void setKiswahili(Integer kiswahili) {
         this.kiswahili = kiswahili;
     }
 
-    public float getBiology() {
+    public Integer getBiology() {
         return biology;
     }
 
-    public void setBiology(float biology) {
+    public void setBiology(Integer biology) {
         this.biology = biology;
     }
 
-    public float getChemistry() {
+    public Integer getChemistry() {
         return chemistry;
     }
 
-    public void setChemistry(float chemistry) {
+    public void setChemistry(Integer chemistry) {
         this.chemistry = chemistry;
     }
 
-    public float getPhysics() {
+    public Integer getPhysics() {
         return physics;
     }
 
-    public void setPhysics(float physics) {
+    public void setPhysics(Integer physics) {
         this.physics = physics;
     }
 
-    public float getAgriculture() {
+    public Integer getAgriculture() {
         return agriculture;
     }
 
-    public void setAgriculture(float agriculture) {
+    public void setAgriculture(Integer agriculture) {
         this.agriculture = agriculture;
     }
 
-    public float getGeography() {
+    public Integer getGeography() {
         return geography;
     }
 
-    public void setGeography(float geography) {
+    public void setGeography(Integer geography) {
         this.geography = geography;
     }
 
-    public float getComputerStudies() {
+    public Integer getComputerStudies() {
         return computerStudies;
     }
 
-    public void setComputerStudies(float computerStudies) {
+    public void setComputerStudies(Integer computerStudies) {
         this.computerStudies = computerStudies;
     }
 
-    public float getTotalMark() {
+    public Integer getTotalMark() {
         return totalMark;
     }
 
-    public void setTotalMark(float totalMark) {
+    public void setTotalMark(Integer totalMark) {
         this.totalMark = totalMark;
     }
 
-    public float getMeanMark() {
+    public Integer getMeanMark() {
         return meanMark;
     }
 
-    public void setMeanMark(float meanMark) {
+    public void setMeanMark(Integer meanMark) {
         this.meanMark = meanMark;
     }
 
-    public float getMeanGrade() {
+    public Integer getMeanGrade() {
         return meanGrade;
     }
 
-    public void setMeanGrade(float meanGrade) {
+    public void setMeanGrade(Integer meanGrade) {
         this.meanGrade = meanGrade;
     }
 
@@ -249,12 +249,12 @@ public class Result implements Serializable {
         this.studentId = studentId;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 0;
+    /*@Override
+    public Integer hashCode() {
+        Integer hash = 0;
         hash += (id != null ? id.hashCode() : 0);
         return hash;
-    }
+    }*/
 
     @Override
     public boolean equals(Object object) {
