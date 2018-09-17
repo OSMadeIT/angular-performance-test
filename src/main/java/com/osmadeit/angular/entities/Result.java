@@ -5,7 +5,6 @@
  */
 package com.osmadeit.angular.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -52,57 +51,55 @@ public class Result implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "math", nullable = false)
-    private Integer math;
+    private int math;
     @Basic(optional = false)
     @NotNull
     @Column(name = "english", nullable = false)
-    private Integer english;
+    private int english;
     @Basic(optional = false)
     @NotNull
     @Column(name = "kiswahili", nullable = false)
-    private Integer kiswahili;
+    private int kiswahili;
     @Basic(optional = false)
     @NotNull
     @Column(name = "biology", nullable = false)
-    private Integer biology;
+    private int biology;
     @Basic(optional = false)
     @NotNull
     @Column(name = "chemistry", nullable = false)
-    private Integer chemistry;
+    private int chemistry;
     @Basic(optional = false)
     @NotNull
     @Column(name = "physics", nullable = false)
-    private Integer physics;
+    private int physics;
     @Basic(optional = false)
     @NotNull
     @Column(name = "agriculture", nullable = false)
-    private Integer agriculture;
+    private int agriculture;
     @Basic(optional = false)
     @NotNull
     @Column(name = "geography", nullable = false)
-    private Integer geography;
+    private int geography;
     @Basic(optional = false)
     @NotNull
     @Column(name = "computer_studies", nullable = false)
-    private Integer computerStudies;
+    private int computerStudies;
     @Basic(optional = false)
     @NotNull
     @Column(name = "total_mark", nullable = false)
-    private Integer totalMark;
+    private int totalMark;
     @Basic(optional = false)
     @NotNull
     @Column(name = "mean_mark", nullable = false)
-    private Integer meanMark;
+    private int meanMark;
     @Basic(optional = false)
     @NotNull
     @Column(name = "mean_grade", nullable = false)
-    private Integer meanGrade;
+    private int meanGrade;
     @JoinColumn(name = "exam_id", referencedColumnName = "id", nullable = false)
-    @JsonIgnore
     @ManyToOne(optional = false)
     private Exam examId;
     @JoinColumn(name = "student_id", referencedColumnName = "id", nullable = false)
-    @JsonIgnore
     @ManyToOne(optional = false)
     private Student studentId;
 
@@ -113,7 +110,7 @@ public class Result implements Serializable {
         this.id = id;
     }
 
-    public Result(Integer id, Integer math, Integer english, Integer kiswahili, Integer biology, Integer chemistry, Integer physics, Integer agriculture, Integer geography, Integer computerStudies, Integer totalMark, Integer meanMark, Integer meanGrade) {
+    public Result(Integer id, int math, int english, int kiswahili, int biology, int chemistry, int physics, int agriculture, int geography, int computerStudies, int totalMark, int meanMark, int meanGrade) {
         this.id = id;
         this.math = math;
         this.english = english;
@@ -137,99 +134,99 @@ public class Result implements Serializable {
         this.id = id;
     }
 
-    public Integer getMath() {
+    public int getMath() {
         return math;
     }
 
-    public void setMath(Integer math) {
+    public void setMath(int math) {
         this.math = math;
     }
 
-    public Integer getEnglish() {
+    public int getEnglish() {
         return english;
     }
 
-    public void setEnglish(Integer english) {
+    public void setEnglish(int english) {
         this.english = english;
     }
 
-    public Integer getKiswahili() {
+    public int getKiswahili() {
         return kiswahili;
     }
 
-    public void setKiswahili(Integer kiswahili) {
+    public void setKiswahili(int kiswahili) {
         this.kiswahili = kiswahili;
     }
 
-    public Integer getBiology() {
+    public int getBiology() {
         return biology;
     }
 
-    public void setBiology(Integer biology) {
+    public void setBiology(int biology) {
         this.biology = biology;
     }
 
-    public Integer getChemistry() {
+    public int getChemistry() {
         return chemistry;
     }
 
-    public void setChemistry(Integer chemistry) {
+    public void setChemistry(int chemistry) {
         this.chemistry = chemistry;
     }
 
-    public Integer getPhysics() {
+    public int getPhysics() {
         return physics;
     }
 
-    public void setPhysics(Integer physics) {
+    public void setPhysics(int physics) {
         this.physics = physics;
     }
 
-    public Integer getAgriculture() {
+    public int getAgriculture() {
         return agriculture;
     }
 
-    public void setAgriculture(Integer agriculture) {
+    public void setAgriculture(int agriculture) {
         this.agriculture = agriculture;
     }
 
-    public Integer getGeography() {
+    public int getGeography() {
         return geography;
     }
 
-    public void setGeography(Integer geography) {
+    public void setGeography(int geography) {
         this.geography = geography;
     }
 
-    public Integer getComputerStudies() {
+    public int getComputerStudies() {
         return computerStudies;
     }
 
-    public void setComputerStudies(Integer computerStudies) {
+    public void setComputerStudies(int computerStudies) {
         this.computerStudies = computerStudies;
     }
 
-    public Integer getTotalMark() {
+    public int getTotalMark() {
         return totalMark;
     }
 
-    public void setTotalMark(Integer totalMark) {
+    public void setTotalMark(int totalMark) {
         this.totalMark = totalMark;
     }
 
-    public Integer getMeanMark() {
+    public int getMeanMark() {
         return meanMark;
     }
 
-    public void setMeanMark(Integer meanMark) {
+    public void setMeanMark(int meanMark) {
         this.meanMark = meanMark;
     }
 
-    public Integer getMeanGrade() {
+    public int getMeanGrade() {
         return meanGrade;
     }
 
-    public void setMeanGrade(Integer meanGrade) {
+    public void setMeanGrade(int meanGrade) {
         this.meanGrade = meanGrade;
     }
 
@@ -249,12 +246,12 @@ public class Result implements Serializable {
         this.studentId = studentId;
     }
 
-    /*@Override
-    public Integer hashCode() {
-        Integer hash = 0;
+    @Override
+    public int hashCode() {
+        int hash = 0;
         hash += (id != null ? id.hashCode() : 0);
         return hash;
-    }*/
+    }
 
     @Override
     public boolean equals(Object object) {

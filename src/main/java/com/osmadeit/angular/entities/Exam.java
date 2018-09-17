@@ -5,9 +5,9 @@
  */
 package com.osmadeit.angular.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.io.Serializable;
 import java.util.List;
+import javax.json.bind.annotation.JsonbTransient;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -48,7 +48,6 @@ public class Exam implements Serializable {
     @Size(min = 1, max = 199)
     @Column(name = "name", nullable = false, length = 199)
     private String name;
-    @JsonIgnore
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "examId")
     private List<Result> resultList;
 
@@ -81,6 +80,7 @@ public class Exam implements Serializable {
     }
 
     @XmlTransient
+    @JsonbTransient
     public List<Result> getResultList() {
         return resultList;
     }

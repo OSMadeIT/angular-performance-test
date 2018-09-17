@@ -1,6 +1,10 @@
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/entities/Result.java
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/entities/Student.java
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/bean/ExamBean.java
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/school/test/ApplicationConfig.java
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/entities/Exam.java
-/home/osmadeit/NetBeansProjects/angular-performance-test/src/main/java/com/osmadeit/angular/rest/ExamRest.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\bean\ResultBean.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\rest\StudentRest.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\entities\Result.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\rest\ExamRest.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\rest\ResultRest.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\entities\Student.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\bean\ExamBean.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\entities\Exam.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\school\test\ApplicationConfig.java
+C:\Users\litem\OneDrive\Documents\NetBeansProjects\angular-school-test\src\main\java\com\osmadeit\angular\bean\StudentBean.java
