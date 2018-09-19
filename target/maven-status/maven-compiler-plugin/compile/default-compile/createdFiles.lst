@@ -11,3 +11,4 @@ com\osmadeit\angular\bean\ExamBean.class
 com\osmadeit\angular\entities\Exam_.class
 com\osmadeit\angular\bean\ResultBean.class
 com\osmadeit\angular\entities\Result_.class
+com\osmadeit\angular\rest\ExcelFileService.class

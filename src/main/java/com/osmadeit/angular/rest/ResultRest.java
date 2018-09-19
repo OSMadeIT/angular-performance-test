@@ -27,8 +27,7 @@ public class ResultRest {
     @EJB
     ResultBean resultService; 
  
-    @GET
-    
+    @GET    
     @Path("/list")
     public List<Result> findResult(){
        List<Result> results = resultService.getResult();
