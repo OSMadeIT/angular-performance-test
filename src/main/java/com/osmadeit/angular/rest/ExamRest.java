@@ -2,6 +2,7 @@ package com.osmadeit.angular.rest;
 
 import com.osmadeit.angular.entities.Exam;
 import com.osmadeit.angular.bean.ExamBean;
+import java.io.File;
 import java.util.List;
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
@@ -14,6 +15,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 /**
  *
@@ -24,6 +26,23 @@ import javax.ws.rs.core.MediaType;
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class ExamRest {
+    //Download for exam excel file
+            private static final String FILE_PATH = "C:\\Users\\litem\\OneDrive\\Documents\\Projects\\Angular\\angular-school-test-ui\\src\\app\\new-student\\files\\createExamSheet.xls";
+
+	@GET
+	@Path("/download")
+	@Produces("application/vnd.ms-excel")
+	public Response getFile() {
+
+		File file = new File(FILE_PATH);
+
+		Response.ResponseBuilder response = Response.ok((Object) file);
+		response.header("Content-Disposition",
+			"attachment; filename=new-excel-file.xls");
+		return response.build();
+
+	}
+        
     @EJB
     ExamBean examService; 
  
