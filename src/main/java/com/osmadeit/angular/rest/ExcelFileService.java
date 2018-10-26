@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.osmadeit.angular.rest;
 
 import java.io.File;
@@ -18,9 +13,10 @@ import javax.ws.rs.core.Response.ResponseBuilder;
  */
 @Path("/excel")
 public class ExcelFileService {
-    
+    //Absolute file path
     private static final String FILE_PATH = "C:\\Users\\litem\\OneDrive\\Documents\\Projects\\Angular\\angular-school-test-ui\\src\\app\\new-student\\files\\newStudentSheet.xls";
-
+	
+	//API endpoint
 	@GET
 	@Path("/get")
 	@Produces("application/vnd.ms-excel")
